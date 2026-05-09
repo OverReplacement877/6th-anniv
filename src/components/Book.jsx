@@ -107,7 +107,7 @@ function Book() {
           <div className="page-content">
             <div className="pokemon-container">
               <img 
-                src={`/images/${pokemon.id}`} 
+                src={`${import.meta.env.BASE_URL}/images/${pokemon.id}`} 
                 // alt={pokemon.name} 
               />
               <div className="pokemon-info">
