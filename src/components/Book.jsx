@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import HTMLFlipBook from "react-pageflip";
+import Petals from "./Petals";
+import BackgroundMusic from "./BackgroundMusic";
 
 function Book() {
 
@@ -80,9 +82,9 @@ function Book() {
 
   return (
     <>
-    {/* <audio autoPlay loop controls>
-      <source src="/audio/music.mp3" type="audio/mpeg" />
-    </audio> */}
+    <Petals />
+
+    <BackgroundMusic src={`${import.meta.env.BASE_URL}audio/audio1.mp3`} volume={0.5} />
 
     <HTMLFlipBook 
       width={470} 
